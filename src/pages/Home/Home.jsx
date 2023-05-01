@@ -1,7 +1,5 @@
-import { Navigate } from "react-router-dom";
-import Button from "../../components/Button/Button";
-import { Section } from "../../components/Section/Section.styled";
-import { InformationProject } from "./Home.styled";
+import { Section } from '../../components/Section/Section.styled';
+import { InformationProject } from './Home.styled';
 
 const Home = () => {
   return (

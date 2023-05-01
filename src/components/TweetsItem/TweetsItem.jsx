@@ -1,4 +1,4 @@
-import Button from "../Button/Button";
+import Button from '../Button/Button';
 import {
   BoyImg,
   DymkaImg,
@@ -6,10 +6,10 @@ import {
   LogoImg,
   TweetItem,
   TweetsCount,
-} from "./TweetsItem.styled";
-import Logo from "../../images/Logo.png";
-import Dymka from "../../images/dymka.png";
-import Boy from "../../images/Boy.png";
+} from './TweetsItem.styled';
+import Logo from '../../images/Logo.png';
+import Dymka from '../../images/dymka.png';
+import Boy from '../../images/Boy.png';
 
 const TweetsItem = ({ tweet, onClick }) => {
   const { tweets, following, followers } = tweet;
@@ -22,13 +22,13 @@ const TweetsItem = ({ tweet, onClick }) => {
       </DymkaImg>
       <Line />
       <BoyImg>
-        <img src={Boy} alt="Boy image" />
+        <img src={Boy} alt="Boy" />
       </BoyImg>
 
       <Button onClick={onClick} isFollowing={following}>
-        {following ? "Following" : "Follow"}
+        {following ? 'Following' : 'Follow'}
       </Button>
-      <TweetsCount>{followers.toLocaleString("en-US")} FOLLOWERS</TweetsCount>
+      <TweetsCount>{followers.toLocaleString('en-US')} FOLLOWERS</TweetsCount>
       <TweetsCount>{tweets} TWEETS</TweetsCount>
     </TweetItem>
   );
