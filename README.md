@@ -19,13 +19,13 @@ Clone the repository.
 
 Install the dependencies using **npm install**.
 
-Start the development server using **npm run dev**.
+Start the development server using **npm start**.
 
 **Deployment**
 
 ---
 
-Run **npm run build** to create a production-ready build.
+Run **npm  build** to create a production-ready build.
 
 Deploy the contents of the dist directory to your web server.
 
